@@ -1,0 +1,49 @@
+body {
+    font-size: 14px;
+    line-height: 24px;
+    color: black;
+    font-weight: normal;
+    font-family: PTSans NarrowBold, sans-serif;
+}
+
+h1 {
+	font-size: 30px;
+	line-height: 42px;
+	color: black;
+	font-weight: normal;
+	font-family: PTSans NarrowBold, sans-serif;
+}
+
+.main-header {
+	background-color: #000000;
+	background-repeat: repeat-y;
+	background-position: center top;
+}
+
+.main-footer {
+    background: url("img/фон подвала.jpg") no-repeat 0px 100%;
+}
+
+.set-for-travel {
+    background: url("img/1.png") repeat-x 0px 50%;
+}
+
+.clay-for-laying {
+    background: url("img/2.png") no-repeat 0px 50%;
+}
+
+.moistening-conditioner {
+    background: url("img/3.png") no-repeat 0px 50%;
+}
+
+.hair-gel {
+    background: url("img/4.png") no-repeat 0px 50%;
+}
+
+.SUAVECITO-hair-gel {
+    background: url("img/5.png") no-repeat 0px 50%;
+}
+
+.set-for-shaving {
+    background: url("img/6.png") no-repeat 0px 50%;
+}

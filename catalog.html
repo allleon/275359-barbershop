@@ -3,12 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Барбершоп</title>
+    <link href="css/style.css" rel="stylesheet"></link>
   </head>
   <body>
+      <style>
+        body {
+          background-image: url("img/фон.jpg");
+        }
+      </style>
 	<header class="main-header">
-   <a href="#">
-    <img src="img/index-logo.png" alt="Барбершоп">
-   </a>
+   <style>
+        .main-header {
+          background-color: #000000;
+          background-repeat: repeat-y;
+          background-position: center top;
+        }
+   </style>
+   <div class="logo">
+      <a class="barbershop" href="#">
+       <img src="img/Logo.png" width="100" height="50" alt="Барбершоп">
+      </a>
       <div class="container">
         <nav class="main-navigation">
           <ul>
@@ -30,6 +44,7 @@
           </ul>
         </nav>
         <div class="user-block">
+         <img src="img/icon-login.png" width="100" height="50" alt="Вход">
           <a class="login" href="#">Вход</a>
         </div>
       </div>
@@ -50,7 +65,7 @@
         </ul>
       </nav>
     </div>
-  <main class="container">
+  <main class="product">
    <div class="left-columm">
     <form action="#" method="post">
      <p>Производители:</p>
@@ -77,48 +92,84 @@
     </form>
    </div>
    <div class="catalog">
-    <article class="product-catalog">
-      <img src="http://placehold.it/150x100">
+    <div class="set-for-travel">
+     <style>
+      .set-for-travel {
+          background: url("img/1.png") no-repeat 0px 50%;
+      }
+     </style>
+     <article class="product-catalog">
        <a href="#" class="catalog-title">Набор для путешествий</a>
        <span class="catalog-product-title">"Baxter of california"</span>
        <span class="price">2900 руб.</span>
        <a href="#" class="buy">Купить </a>
-    </article>
-    <article class="product-catalog">
-      <img src="http://placehold.it/150x100">
-      <a href="#" class="catalog-title">Глина для укладки волос<a>
-      <span class="catalog-product-title">"American crew"</span>
-      <span class="price">500 руб.</span>
-      <a href="#" class="buy">Купить </a>
-    </article>
-    <article class="product-catalog">
-      <img src="http://placehold.it/150x100">
-      <a href="#" class="catalog-title">Увлажняющий кондиционер<a>
-      <span class="catalog-product-title">"Baxter of california"</span>
-      <span class="price">750 руб.</span>
-      <a href="#" class="buy">Купить </a>
-    </article>
-    <article class="product-catalog">
-      <img src="http://placehold.it/150x100">
+     </article>
+    </div>
+    <div class="clay-for-laying">
+     <style>
+      .clay-for-laying {
+          background: url("img/2.png") no-repeat 0px 50%;
+      }
+     </style>
+     <article class="product-catalog">
+       <a href="#" class="catalog-title">Глина для укладки волос</a>
+       <span class="catalog-product-title">"American crew"</span>
+       <span class="price">500 руб.</span>
+       <a href="#" class="buy">Купить </a>
+     </article>
+    </div>
+    <div class="moistening-conditioner">
+     <style>
+      .moistening-conditioner {
+          background: url("img/3.png") no-repeat 0px 50%;
+      }
+     </style>
+     <article class="product-catalog">
+       <a href="#" class="catalog-title">Увлажняющий кондиционер</a>
+       <span class="catalog-product-title">"Baxter of california"</span>
+       <span class="price">750 руб.</span>
+       <a href="#" class="buy">Купить </a>
+     </article>
+    </div>
+    <div class="hair-gel">
+     <style>
+      .hair-gel {
+          background: url("img/4.png") no-repeat 0px 50%;
+      }
+     </style>
+     <article class="product-catalog">
       <a href="#" class="catalog-title">Гель для волос</a>
       <span class="catalog-product-title">"American crew"</span>
       <span class="price">300 руб.</span>
       <a href="#" class="buy">Купить </a>
-    </article>
-    <article class="product-catalog">
-      <img src="http://placehold.it/150x100">
+     </article>
+    </div>
+    <div class="SUAVECITO-hair-gel">
+     <style>
+      .SUAVECITO-hair-gel {
+          background: url("img/5.png") no-repeat 0px 50%;
+      }
+     </style>
+     <article class="product-catalog">
       <a href="#" class="catalog-title">Гель для волос</a>
       <span class="catalog-product-title">"Suavecito"</span>
       <span class="price">290 руб.</span>
       <a href="#" class="buy">Купить </a>
-    </article>
-    <article class="product-catalog">
-      <img src="http://placehold.it/150x100">
+     </article>
+    </div>
+    <div class="set-for-shaving">
+     <style>
+      .set-for-shaving {
+          background: url("img/6.png") no-repeat 0px 50%;
+      }
+     </style>
+     <article class="product-catalog">
       <a href="#" class="catalog-title">Набор для бритья</a>
       <span class="catalog-product-title">"Baxter of california"</span>
       <span class="price">3 900 руб.</span>
       <a href="#" class="buy">Купить </a>
-    </article>
+     </article>
+    </div>
     <ul class="pagination">
      <li><a href="#">1</a></li>
      <li class="disabled">2</li>
@@ -128,25 +179,35 @@
     </ul>
    </div>
   </main>
-   <footer class="main-footer">
-    <div class="container">
-      <section class="footer-contacts">
-          Барбершоп «Бородинский»<br>
-          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-          <a href="#">Как нас найти?</a><br>
-          Телефон: +7 (812) 666-02-66
-      </section>
-      <section class="footer-social">
-        <p>Давайте дружить!</p>
-        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-      </section>
-      <section class="footer-copyright">
-        <p>Разработано:</p>
-        <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
-      </section>
-    </div>
-  </footer>
+ <footer class="main-footer">
+   <style>
+    .main-footer {
+          background: url("img/фон подвала.jpg") repeat-x center bottom;
+    }
+   </style>
+    <section class="footer-contacts">
+        Барбершоп «Бородинский»<br>
+        Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+        <a href="#">Как нас найти?</a><br>
+        Телефон: +7 (812) 666-02-66
+    </section>
+    <section class="footer-social">
+      <p>Давайте дружить!</p>
+      <a class="social-btn social-btn-vk" href="#">
+        <img src="img/v.png" width="50" height="50" alt="Вконтакте">
+      </a>
+      <a class="social-btn social-btn-fb" href="#">
+        <img src="img/f.png" width="50" height="50" alt="Фейсбук">
+      </a>
+      <a class="social-btn social-btn-inst" href="#">
+        <img src="img/i.png" width="50" height="50" alt="Инстаграм">
+      </a>
+    </section>
+    <section class="footer-copyright">
+      <p>Разработано:</p>
+      <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+    </section>
+  </div>
+ </footer>
 </body>
 </html>

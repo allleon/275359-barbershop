@@ -3,12 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Барбершоп</title>
+    <link href="css/style.css" rel="stylesheet"></link>
   </head>
   <body>
+      <style>
+        body {
+          background-image: url("img/фон.jpg");
+        }
+      </style>
    <header class="main-header">
-    <a href="#">
-     <img src="img/index-logo.png" alt="Барбершоп">
-    </a>
+      <style>
+        .main-header {
+          background-color: #000000;
+          background-repeat: repeat-y;
+          background-position: center top;
+        }
+      </style>
+    <div class="logo">
+      <a class="barbershop" href="#">
+       <img src="img/Logo.png" width="100" height="50" alt="Барбершоп">
+      </a>
       <div class="container">
         <nav class="main-navigation">
           <ul>
@@ -30,6 +44,7 @@
           </ul>
         </nav>
         <div class="user-block">
+          <img src="img/icon-login.png" width="100" height="50" alt="Вход">
           <a class="login" href="#">Вход</a>
         </div>
       </div>
@@ -54,11 +69,11 @@
     <main class="container">
      <div class="photo-gallery">
       <figure class="gallery-content">
-       <img class="photo" src="http://placehold.it/150x100" width="450" height="490">
+       <img src="img/big.png" width="500" height="500" alt="Большая">
         <div class="mini-photo">
-         <img class="photo" src="http://placehold.it/150x100">
-         <img class="photo" src="http://placehold.it/150x100">
-         <img class="photo" src="http://placehold.it/150x100">
+         <img src="img/mini1.png" width="150" height="100" alt="Мини1">
+         <img src="img/mini2.png" width="150" height="100" alt="Мини2">
+         <img src="img/mini3.png" width="150" height="100" alt="Мини3">
         </div>
       </figure>
      </div>
@@ -82,7 +97,11 @@
      </div>
     </div>
 <footer class="main-footer">
-  <div class="container">
+   <style>
+    .main-footer {
+          background: url("img/фон подвала.jpg") repeat-x 0px 100%;
+    }
+   </style>
     <section class="footer-contacts">
         Барбершоп «Бородинский»<br>
         Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
@@ -91,9 +110,15 @@
     </section>
     <section class="footer-social">
       <p>Давайте дружить!</p>
-      <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-      <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-      <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+      <a class="social-btn social-btn-vk" href="#">
+        <img src="img/v.png" width="50" height="50" alt="Вконтакте">
+      </a>
+      <a class="social-btn social-btn-fb" href="#">
+        <img src="img/f.png" width="50" height="50" alt="Фейсбук">
+      </a>
+      <a class="social-btn social-btn-inst" href="#">
+        <img src="img/i.png" width="50" height="50" alt="Инстаграм">
+      </a>
     </section>
     <section class="footer-copyright">
       <p>Разработано:</p>
